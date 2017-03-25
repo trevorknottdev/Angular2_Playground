@@ -1,0 +1,22 @@
+<h6>Radio Button Example</h6>
+
+<form #formRef="ngForm">
+  <div *ngFor="let language of languages">
+    <input
+      type="radio"
+      [attr.id]="language"
+      name="language"
+      ngModel
+      [value]="language"
+      required>
+
+    <label [attr.for]="language">{{language}}</label>
+  </div>
+s
+  <hr>
+  {{formRef.value | json}}
+  <hr>
+
+  Valid: {{formRef.valid | json}}
+</form>
+

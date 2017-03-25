@@ -8,6 +8,10 @@ fieldset {
   .ng-valid {
     border: 2px solid green;
   }
+
+  .ng-untouched {
+    border: 2px solid grey;
+  }
 }
 
 form {
