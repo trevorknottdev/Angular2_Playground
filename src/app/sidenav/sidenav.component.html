@@ -1,0 +1,25 @@
+<md-sidenav-container class="sidenav-container">
+  <md-sidenav #sidenav class="tk-sidenav lightblue">
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Contact For Work</a>
+      </li>
+      <li>
+        <a href="">About Trevor</a>
+      </li>
+      <li>
+        <a href="">Trevor's Blog</a>
+      </li>
+    </ul>
+  </md-sidenav>
+
+  <div class="tk-sidenav-content blue">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+
+</md-sidenav-container>
