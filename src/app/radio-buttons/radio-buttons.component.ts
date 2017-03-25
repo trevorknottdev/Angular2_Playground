@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RadioButtonsComponent implements OnInit {
 
-  languages = ['Elixir', 'Typescript', 'Javascript', 'Ruby', 'C#', 'Node'];
+  languages = ['Elixir', 'Typescript', 'Javascript', 'Ruby', 'C#', 'Golang', 'mongoDB'];
 
   constructor() { }
 

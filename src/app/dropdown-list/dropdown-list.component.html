@@ -1,3 +1,13 @@
-<p>
-  dropdown-list works!
-</p>
+<form #formRef="ngForm">
+  <select name="framework" [(ngModel)]="framework">
+    <option
+      *ngFor="let framework of frameworks"
+            [value]="framework">
+      {{framework}}
+    </option>
+  </select>
+</form>
+
+<hr>
+{{formRef.value | json}}
+<hr>
