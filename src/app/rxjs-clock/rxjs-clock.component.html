@@ -1,0 +1,6 @@
+<hr>
+
+<h3>Ticker:     {{ticker | async}}</h3>
+<h3>Clock:      {{clock | async | date: 'yMMMMEEEEdjms'}}</h3>
+<button (click)="click$.next()">Update</button>
+<hr>

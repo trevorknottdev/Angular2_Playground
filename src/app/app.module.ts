@@ -18,6 +18,8 @@ import { FormMiscComponent } from './form-misc/form-misc.component';
 import { RadioButtonsComponent } from './radio-buttons/radio-buttons.component';
 import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
 import { DepInjComponent } from './dep-inj/dep-inj.component';
+import { FizzbuzzComponent } from './fizzbuzz/fizzbuzz.component';
+import { RxjsClockComponent } from './rxjs-clock/rxjs-clock.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { DepInjComponent } from './dep-inj/dep-inj.component';
     FormMiscComponent,
     RadioButtonsComponent,
     DropdownListComponent,
-    DepInjComponent
+    DepInjComponent,
+    FizzbuzzComponent,
+    RxjsClockComponent
   ],
   imports: [
     BrowserModule,
