@@ -1,0 +1,15 @@
+
+
+fieldset {
+  .ng-invalid {
+    border: 2px solid red;
+  }
+
+  .ng-valid {
+    border: 2px solid green;
+  }
+}
+
+form {
+  border: none;
+}

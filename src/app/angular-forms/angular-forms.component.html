@@ -1,7 +1,28 @@
-<input
-  required
-  type="text"
-  [(ngModel)]="username"
-  placeholder="username"
-  #usernameRef="ngModel">
-{{usernameRef.valid}}
+<form
+  #formRef="ngForm"
+  (ngSubmit)="onSubmit(formRef.value)">
+  <fieldset ngModelGroup="login">
+    <input
+      required
+      type="text"
+      [(ngModel)]="username"
+      name="username"
+      placeholder="username"
+      #usernameRef="ngModel"
+      minlength="3">
+    <div *ngIf="usernameRef.errors?.required">Username Is Required!</div>
+    <div *ngIf="usernameRef.errors?.minlength">Username must be longer than {{usernameRef.errors?.minlength.requiredLength}}. characters... You only typed {{usernameRef.errors?.minlength.actualLength}}.</div>
+
+    <input #passwordRef="ngModel" type="password" [(ngModel)]="password" name="password" required minLength="3">
+    <div *ngIf="passwordRef.errors?.required">Password Is Required!</div>
+    <div *ngIf="passwordRef.errors?.minlength">Password must be longer than {{passwordRef.errors?.minlength.requiredLength}}. characters... You only typed {{passwordRef.errors?.minlength.actualLength}}.</div>
+
+
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
+
+{{formRef.value | json}}
+{{formRef.valid | json}}
+
+<h1 *ngIf="formList.length > 0">{{formList}}</h1>

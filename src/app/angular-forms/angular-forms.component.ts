@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-forms.component.scss']
 })
 export class AngularFormsComponent implements OnInit {
+  formList = [];
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSubmit(formValue: any): void {
+    console.log(formValue);
+    this.formList.push(JSON.stringify(formValue));
+  }
 }
