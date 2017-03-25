@@ -25,4 +25,9 @@
 {{formRef.value | json}}
 {{formRef.valid | json}}
 
+| {{passwordRef.touched}} <- passwordRef touched?
+| {{passwordRef.untouched}} <- passwordRef untouched?
+
+| {{usernameRef.touched}} <- Usernameref touched?
+| {{usernameRef.untouched}} <- Usernameref untouched?
 <h1 *ngIf="formList.length > 0">{{formList}}</h1>
