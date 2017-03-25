@@ -17,6 +17,7 @@ import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databi
 import { FormMiscComponent } from './form-misc/form-misc.component';
 import { RadioButtonsComponent } from './radio-buttons/radio-buttons.component';
 import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
+import { DepInjComponent } from './dep-inj/dep-inj.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
     TwoWayDatabindingComponent,
     FormMiscComponent,
     RadioButtonsComponent,
-    DropdownListComponent
+    DropdownListComponent,
+    DepInjComponent
   ],
   imports: [
     BrowserModule,
